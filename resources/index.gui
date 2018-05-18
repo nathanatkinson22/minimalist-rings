@@ -16,13 +16,19 @@
   <!--<text id="myBatteryLow" />-->
   <!--<text id="myBattery" />-->
   <image id="charge" />
-  <line id="batteryLine" stroke-width="2" x1="1" y1="1" x2="100%" y2="1" fill="green"/>
+  <line id="batteryLine" stroke-width="4" x1="1" y1="1" x2="100%" y2="1" fill="green"/>
 
 <!-- Activity Rings -->
+  
+  <arc id="stepsArcBG"  />
+  <arc id="calsArcBG"  />
+  <arc id="activeArcBG"  />
+  <arc id="stairsArcBG"  />
   <arc id="stepsArc"  />
   <arc id="calsArc"  />
   <arc id="activeArc"  />
   <arc id="stairsArc"  />
+
   </svg>
 
 <!-- Colors and Icons Attribution

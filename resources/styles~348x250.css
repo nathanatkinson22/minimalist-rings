@@ -118,14 +118,26 @@
 }
 
 #stepsArc {
-  x: 119; y: 130; width: 110; height: 110; fill: #006DF0; arc-width: 10; start-angle: 0; sweep-angle: 0;
+  x: 119; y: 130; width: 110; height: 110; fill: #006DF0; arc-width: 7; start-angle: 0; sweep-angle: 0;
 }
 #activeArc {
-x:129; y:140; width: 90; height:90; fill:#72EF49; arc-width: 10; start-angle: 0; sweep-angle: 0;
+x:129; y:140; width: 90; height:90; fill:#72EF49; arc-width: 7; start-angle: 0; sweep-angle: 0;
 }
 #stairsArc {
-x:139; y:150; width:70; height:70; fill:#EB1515; arc-width: 10; start-angle: 0; sweep-angle: 0;
+x:139; y:150; width:70; height:70; fill:#EB1515; arc-width: 7; start-angle: 0; sweep-angle: 0;
 }
 #calsArc {
- x: 149; y: 160; width: 50; height: 50; fill: #FFA500; arc-width: 10; start-angle: 0; sweep-angle: 0;
+ x: 149; y: 160; width: 50; height: 50; fill: #FFA500; arc-width: 7; start-angle: 0; sweep-angle: 0;
+}
+#stepsArcBG {
+  x: 119; y: 130; width: 110; height: 110; fill: #006DF0; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#activeArcBG {
+x:129; y:140; width: 90; height:90; fill:#72EF49; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#stairsArcBG {
+x:139; y:150; width:70; height:70; fill:#EB1515; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#calsArcBG {
+ x: 149; y: 160; width: 50; height: 50; fill: #FFA500; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
 }
