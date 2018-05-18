@@ -1,0 +1,36 @@
+<svg class="background">
+  <text id="myTime" />
+  <text id="myDateLabel" />
+
+<!-- Stats -->
+  <image id="stepsImg" href="steps.png" />
+  <text id="mySteps" />
+  <image id="stairsImg" href="stairs.png" />
+  <text id="myStairs" />
+  <image id="calImg" href="calories.png" />
+  <text id="myCals" />
+  <image id="activeImg" href="active.png" />
+  <text id="myMins" />
+  
+<!-- Battery Status -->
+  <!--<text id="myBatteryLow" />-->
+  <!--<text id="myBattery" />-->
+  <image id="charge" />
+  <line id="batteryLine" stroke-width="2" x1="1" y1="1" x2="100%" y2="1" fill="green"/>
+
+<!-- Activity Rings -->
+  <arc id="stepsArc"  />
+  <arc id="calsArc"  />
+  <arc id="activeArc"  />
+  <arc id="stairsArc"  />
+  </svg>
+
+<!-- Colors and Icons Attribution
+Blue: 006DF0
+Orange: FF9945 // FFA500
+aqua: 26EBEB
+Green: 4DFF29
+Red: EB1515
+Middle line:   <line x1="50%" x2="50%" y1="0" y2="100%" stroke-width="1" fill="red" />
+Icons: <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> 
+-->
