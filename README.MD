@@ -18,4 +18,4 @@ This watchface works on both Ionic and Versa watches. It has the following featu
 
 ![Screenshot on Versa](https://github.com/smplifenathan/minimal-rings/blob/master/Activity-Rings-screenshot%20versa.png)
 
-Let me know if you have any issues. This is my first clockface for a Fitbit watch, so I'm sure the code needs some cleaning up. Again, a lot of this code is borrowed from other clockfaces, so I don't take credit for most of the code in this clockface. Feel free to borrow, use, reuse, etc. any of the code here. Anything I copied from other clockfaces was released under the MIT license.
+Let me know if you have any issues. This is my first clockface for a Fitbit watch, so I'm sure the code needs some cleaning up. Again, a lot of this code is borrowed from other clockfaces, so I don't take credit for most of the code in this clockface. Feel free to borrow, use, reuse, etc. any of the code here. Anything I copied from other clockfaces was released under a GNU or MIT license.
