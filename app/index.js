@@ -25,8 +25,6 @@ deviceType = "Versa";
 const SETTINGS_TYPE = "cbor";
 const SETTINGS_FILE = "settings.cbor";
 
-let timecol = json_timeread.timec || "#f8fcf8";
-let othercol = json_timeread.otherc || "#f8fcf8";
 var color = "white";
 
 // Get Goals to reach
@@ -35,11 +33,7 @@ const caloriesGoal = userActivity.goals["calories"];
 const stepsGoal = userActivity.goals.steps;
 const elevationGoal = userActivity.goals.elevationGain;
 const activeGoal = userActivity.goals.activeMinutes;
-
-//var myBattery = document.getElementById("myBattery");
 var batteryLine = document.getElementById("batteryLine");
-//var myBatteryLow = document.getElementById("myBatteryLow");
-var charge = document.getElementById("charge");
 
 let myDateLabel = document.getElementById("myDateLabel");
 let myClock = document.getElementById("myTime");
@@ -51,7 +45,6 @@ let stepRing = document.getElementById("stepsArc");
 let stairsRing = document.getElementById("stairsArc");
 let calRing = document.getElementById("calsArc");
 let activeRing = document.getElementById("activeArc");
-
 
 function updateStats() {
   const metricSteps = "steps";  // distance, calories, elevationGain, activeMinutes
@@ -66,6 +59,7 @@ function updateStats() {
   let stairsString = amountElevation;
   let calString = amountCals;
   let minsString = amountActive;
+
   
   dailysteps.text = stepString; 
   let stepAngle = Math.floor(360*(amountSteps/stepsGoal));
@@ -117,32 +111,6 @@ function updateClock() {
   }
 }
 
-//if (battery.chargeLevel > 20)
-//  {myBattery.text = `${battery.chargeLevel}` + "%";}
-//else
-//  {myBatteryLow.text = `${battery.chargeLevel}` + "%";}
-
-
-let batLengthI = Math.round((100-battery.chargeLevel)*3.48);
-let batLengthV = Math.round((100-battery.chargeLevel)*3);
-
-if (deviceType == "Ionic")
- { batteryLine.x2 = batLengthI;}
-else
-  {batteryLine.x2 = batLengthV;}
-
-if (battery.chargeLevel >= 50)
-  {batteryLine.style.fill="green";}
-else if (battery.chargeLevel <= 49)
-  {if (battery.chargeLevel > 20 )
-  {batteryLine.style.fill="#ffd733";}}
-else {batteryLine.style.fill="red";}
-
-
-if (charger.connected == true)
-   {charge.image = "charge2.png";}
-  else {charge.image = "";}
-
 // Update the clock every tick event
 clock.ontick = () => updateClock();
 
@@ -156,27 +124,64 @@ messaging.peerSocket.onopen = () => {
 messaging.peerSocket.close = () => {
   console.log("App Socket Closed");
 }
+
 let settings = loadSettings();
 
+let applySettings = function() {
+  if (! settings) {
+   return;
+  }
+}
+
 messaging.peerSocket.onmessage = evt => {
-  console.log(`App received: ${JSON.stringify(evt)}`);
+  //console.log(`App received: ${JSON.stringify(evt)}`);
   
   if (evt.data.key === "color" && evt.data.newValue) {
     settings.color = JSON.parse(evt.data.newValue);
     setColor();
   }
+  if (evt.data.key === "batteryOn" && evt.data.newValue) {
+    settings.batteryOn = JSON.parse(evt.data.newValue);
+    batteryChange();
+  } 
   
-}
-
-function applySettings(){
-  setColor();
-}
+  } 
 
 function setColor(){
   color = settings.color;
   myDateLabel.style.fill = color;
   myClock.style.fill = color;
 }
+
+function batteryChange() {
+  if (settings.batteryOn == false)
+  {batteryLine.style.visibility = "hidden";}
+  else if (settings.batteryOn == true)
+  {batteryLine.style.visibility = "visible";}
+  let batLengthI = Math.round((battery.chargeLevel)*3.48);
+let batLengthV = Math.round((battery.chargeLevel)*3);
+
+if (deviceType == "Ionic")
+  { batteryLine.x2 = batLengthI;}
+else if (deviceType == "Versa")
+  {batteryLine.x2 = batLengthV;}
+if (battery.chargeLevel <= 19)
+  {batteryLine.style.fill="red";}
+else if (battery.chargeLevel <= 50)
+  {if (battery.chargeLevel >= 20)
+  {batteryLine.style.fill="#ffd733";}}
+else if (battery.chargeLevel >= 51)
+  {batteryLine.style.fill="green";}
+//if (battery.chargeLevel >= 50 )
+  //{batteryLine.style.fill="green";}
+//else if (battery.chargeLevel <= 49)
+  //{if (battery.chargeLevel >= 20)
+  //{batteryLine.style.fill="#ffd733";}}
+//else if (battery.chargeLevel <= 19) 
+//{batteryLine.style.fill="red";}
+}
+batteryChange();
+battery.onchange = () => batteryChange();
 
 me.onunload = saveSettings;
 
@@ -187,13 +192,24 @@ function loadSettings() {
     // Defaults
     return {
       color : "white",
-    }
+      onBattery: true
+    };
+    return defaults;
   }
 }
-applySettings();
+  applySettings();
+
+let onsettingschange = function(data) {
+  if (!data) {
+   return;
+  }
+  settings = data;
+  applySettings();
+  drawTime(new Date());
+}
+//applySettings();
 
 function saveSettings() {
   settings.noFile = false;
   fs.writeFileSync(SETTINGS_FILE, settings, SETTINGS_TYPE);
 }
-
