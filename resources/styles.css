@@ -9,12 +9,12 @@
   text-length: 80;
   text-anchor: middle;
   x: 50%;
-  y: 0%+90;
+  y: 30%;
   fill: #f8fcf8;
 }
 
 #myDateLabel {
-  font-size: 32;
+  font-size: 36;
   font-family: SevilleSharp-Regular;
   text-anchor: middle;
   text-length: 15;
@@ -28,17 +28,17 @@
   font-family: Seville-Regular;
   text-length: 6;
   text-anchor: start;
-  x: 0%+40;
+  x: 0%+38;
   y: 100%-12;
   fill: #f8fcf8;
 }
 
-#myStairs {
+#myMins {
   font-size: 28;
   font-family: Seville-Regular;
   text-length: 6;
   text-anchor: start;
-  x: 0%+40;
+  x: 0%+38;
   y: 100%-55;
   fill: #f8fcf8;
 }
@@ -48,97 +48,114 @@
   font-family: Seville-Regular;
   text-length: 6;
   text-anchor: end;
-  x: 100%-36;
+  x: 100%-38;
   y: 100%-14;
   fill: #f8fcf8;
 }
 
-#myMins {
+#myStairs {
   font-size: 28;
   font-family: Seville-Regular;
   text-length: 6;
   text-anchor: end;
-  x: 100%-36;
+  x: 100%-38;
   y: 100%-55;
   fill: #f8fcf8;
 }
 
 #stepsImg {
-  x: 0%+5;
-  y:100%-40;
-  width: 30;
-  height: 30;
-}
-
-#stairsImg {
-  x: 0%+5;
-  y:100%-80;
-  width: 30;
-  height: 30;
-}
-
-#calImg {
-  x: 100%-30;
+  x: 0%+8;
   y:100%-40;
   width: 30;
   height: 30;
 }
 
 #activeImg {
-  x: 100%-30;
+  x: 0%+8;
   y:100%-80;
   width: 30;
   height: 30;
 }
 
-#myBatteryLow {
-  font-size: 16;
-  font-family: SevilleSharp-Bold;
-  x: 97%;
-  y: 7%;
-  text-anchor: end;
-  fill: red;
+#calImg {
+  x: 100%-35;
+  y:100%-40;
+  width: 30;
+  height: 30;
 }
 
-#myBattery {
-  font-size: 16;
-  font-family: SevilleSharp-Bold;
-  x: 97%;
-  y: 7%;
-  text-anchor: end;
-  fill: white;
-}
-
-#charge {
-  x: 2%;
-  y: 0%;
-  width: 32;
-  height: 32;
-  text-anchor: start;
+#stairsImg {
+  x: 100%-35;
+  y:100%-80;
+  width: 30;
+  height: 30;
 }
 
 #stepsArc {
-  x: 95; y: 160; width: 110; height: 110; fill: #006DF0; arc-width: 7; start-angle: 0; sweep-angle: 0;
+  x: 93; y: 158; width: 114; height: 114; fill: #006DF0; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 #calsArc {
- x: 125; y: 190; width: 50; height: 50; fill: #FFA500; arc-width: 7; start-angle: 0; sweep-angle: 0;
+ x: 129; y: 194; width: 42; height: 42; fill: #FFA500; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 #activeArc {
-x:105; y:170; width: 90; height:90; fill:#72EF49; arc-width: 7; start-angle: 0; sweep-angle: 0;
+x:105; y:170; width: 90; height:90; fill:#72EF49; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 #stairsArc {
-x:115; y:180; width:70; height:70; fill:#EB1515; arc-width: 7; start-angle: 0; sweep-angle: 0;
+x:117; y:182; width:66; height:66; fill:#EB1515; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 
 #stepsArcBG {
-  x: 95; y: 160; width: 110; height: 110; fill: #006DF0; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+  x: 93; y: 158; width: 114; height: 114; fill: #006DF0; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
 }
 #calsArcBG {
- x: 125; y: 190; width: 50; height: 50; fill: #FFA500; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+ x: 129; y: 194; width: 42; height: 42; fill: #FFA500; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
 }
 #activeArcBG {
-x:105; y:170; width: 90; height: 90; fill: #72EF49; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+x:105; y:170; width: 90; height:90; fill: #72EF49; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
 }
 #stairsArcBG {
-x:115; y:180; width: 70; height: 70; fill: #EB1515; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+x:117; y:182; width:66; height:66; fill: #EB1515; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+
+#stepsArc2 {
+  x: 25; y: 25; width: 250; height: 250; fill: #006DF0; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+#activeArc2 {
+x:43; y:43; width: 214; height:214; fill:#72EF49; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+#stairsArc2 {
+x:61; y:61; width:178; height:178; fill:#EB1515; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+#calsArc2 {
+ x: 79; y: 79; width: 142; height: 142; fill: #FFA500; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+
+#stepsArcBG2 {
+  x: 25; y: 25; width: 250; height: 250; fill: #006DF0; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#activeArcBG2 {
+x:43; y:43; width: 214; height:214; fill: #72EF49; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#stairsArcBG2 {
+x:61; y:61; width:178; height:178; fill: #EB1515; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#calsArcBG2 {
+ x: 79; y: 79; width: 142; height: 142; fill: #FFA500; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+
+#hrm-data {
+font-size: 32;
+  font-family: Seville-Regular;
+  text-anchor: middle;
+  fill: #f8fcf8;
+  x: 50%;
+  y: 50%-4;
+  display: visible;
+}
+#dataIcon {
+  x: 50%-16;
+  y: 50%;
+  width: 32;
+  height: 32;
+  fill: red;
 }

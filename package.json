@@ -1,24 +1,29 @@
 {
   "fitbit": {
-    "appUUID": "62eabe67-8b1e-4d30-bd1f-79cf2dcffb1d",
+    "appUUID": "baeb2d5c-a114-4f20-96c3-e022e8391f6b",
     "appType": "clockface",
-    "appDisplayName": "Minimal Rings",
+    "appDisplayName": "Minimalist Rings",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
     "requestedPermissions": [
       "access_activity",
       "access_user_profile",
-      "access_heart_rate",
-      "run_background"
+      "run_background",
+      "access_heart_rate"
     ],
     "buildTargets": [
       "meson",
-      "higgs"
+      "higgs",
+      "gemini"
     ],
     "i18n": {
       "en": {
-        "name": "Minimal Rings"
+        "name": "Minimalist Rings"
       }
-    }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0"
   }
 }

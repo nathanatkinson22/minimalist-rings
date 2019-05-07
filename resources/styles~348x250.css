@@ -14,7 +14,7 @@
 }
 
 #myDateLabel {
-  font-size: 32;
+  font-size: 36;
   font-family: SevilleSharp-Regular;
   text-anchor: middle;
   text-length: 15;
@@ -33,7 +33,7 @@
   fill: #f8fcf8;
 }
 
-#myStairs {
+#myMins {
   font-size: 28;
   font-family: Seville-Regular;
   text-length: 6;
@@ -53,7 +53,7 @@
   fill: #f8fcf8;
 }
 
-#myMins {
+#myStairs {
   font-size: 28;
   font-family: Seville-Regular;
   text-length: 6;
@@ -70,7 +70,7 @@
   height: 30;
 }
 
-#stairsImg {
+#activeImg {
   x: 0%+5;
   y:100%-80;
   width: 30;
@@ -84,60 +84,78 @@
   height: 30;
 }
 
-#activeImg {
+#stairsImg {
   x: 100%-30;
   y:100%-80;
   width: 30;
   height: 30;
 }
 
-#myBatteryLow {
-  font-size: 16;
-  font-family: SevilleSharp-Bold;
-  x: 97%;
-  y: 7%;
-  text-anchor: end;
-  fill: red;
-}
 
-#myBattery {
-  font-size: 16;
-  font-family: SevilleSharp-Bold;
-  x: 97%;
-  y: 7%;
-  text-anchor: end;
-  fill: white;
-}
-
-#charge {
-  x: 2%;
-  y: 0%;
-  width: 32;
-  height: 32;
-  text-anchor: start;
-}
 
 #stepsArc {
-  x: 119; y: 130; width: 110; height: 110; fill: #006DF0; arc-width: 7; start-angle: 0; sweep-angle: 0;
+  x: 117; y: 128; width: 114; height: 114; fill: #006DF0; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 #activeArc {
-x:129; y:140; width: 90; height:90; fill:#72EF49; arc-width: 7; start-angle: 0; sweep-angle: 0;
+x:129; y:140; width: 90; height:90; fill:#72EF49; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 #stairsArc {
-x:139; y:150; width:70; height:70; fill:#EB1515; arc-width: 7; start-angle: 0; sweep-angle: 0;
+x:141; y:152; width:66; height:66; fill:#EB1515; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 #calsArc {
- x: 149; y: 160; width: 50; height: 50; fill: #FFA500; arc-width: 7; start-angle: 0; sweep-angle: 0;
+ x: 153; y: 164; width: 42; height: 42; fill: #FFA500; arc-width: 10; start-angle: 0; sweep-angle: 0;
 }
 #stepsArcBG {
-  x: 119; y: 130; width: 110; height: 110; fill: #006DF0; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+  x: 117; y: 128; width: 114; height: 114; fill: #006DF0; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
 }
 #activeArcBG {
-x:129; y:140; width: 90; height:90; fill:#72EF49; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+x:129; y:140; width: 90; height:90; fill:#72EF49; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
 }
 #stairsArcBG {
-x:139; y:150; width:70; height:70; fill:#EB1515; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+x:141; y:152; width:66; height:66; fill:#EB1515; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
 }
 #calsArcBG {
- x: 149; y: 160; width: 50; height: 50; fill: #FFA500; arc-width: 7; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+ x: 153; y: 164; width: 42; height: 42; fill: #FFA500; arc-width: 10; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+
+#stepsArc2 {
+  x: 54; y: 5; width: 240; height: 240; fill: #006DF0; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+#activeArc2 {
+x:72; y:23; width: 204; height:204; fill:#72EF49; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+#stairsArc2 {
+x:90; y:41; width:168; height:168; fill:#EB1515; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+#calsArc2 {
+ x: 108; y: 59; width: 132; height: 132; fill: #FFA500; arc-width: 16; start-angle: 0; sweep-angle: 0;
+}
+
+#stepsArcBG2 {
+  x: 54; y: 5; width: 240; height: 240; fill: #006DF0; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#activeArcBG2 {
+x:72; y:23; width: 204; height:204; fill: #72EF49; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#stairsArcBG2 {
+x:90; y:41; width:168; height:168; fill: #EB1515; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+#calsArcBG2 {
+ x: 108; y: 59; width: 132; height: 132; fill: #FFA500; arc-width: 16; start-angle: 0; sweep-angle: 360; opacity: 0.4;
+}
+
+#hrm-data {
+font-size: 32;
+  font-family: Seville-Regular;
+  text-anchor: middle;
+  fill: #f8fcf8;
+  x: 50%;
+  y: 50%-4;
+}
+#dataIcon {
+  x: 50%-16;
+  y: 50%;
+  width: 32;
+  height: 32;
+  fill: red;
 }

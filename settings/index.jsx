@@ -1,3 +1,4 @@
+
 function mySettings(props) {
   return (
     <Page>
@@ -38,10 +39,18 @@ function mySettings(props) {
             {color: 'darkgray'},
             {color: '#303030'}
           ]}
-          />
-      
+          />    
       </Section>
       
+      <Section
+        title={<Text bold align="center">Display Options</Text>}>
+        <Toggle
+          settingsKey="batteryOn"
+          label="Battery Bar Displays?"
+          
+        />
+        
+        </Section>
     </Page>
   );
 }

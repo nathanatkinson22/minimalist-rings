@@ -1,5 +1,7 @@
 <svg class="background">
-  <text id="myTime" />
+  <use id="stats-cycle" href="#cycleview">
+    <use href="#cycleview-item" class="cycle-item">
+  <text id="myTime" /> 
   <text id="myDateLabel" />
 
 <!-- Stats -->
@@ -13,14 +15,11 @@
   <text id="myMins" />
   
 <!-- Battery Status -->
-  <!--<text id="myBatteryLow" />-->
-  <!--<text id="myBattery" />-->
-  <image id="charge" />
-  <line id="batteryLine" stroke-width="4" x1="1" y1="1" x2="100%" y2="1" fill="green"/>
+  <line id="batteryLine" stroke-width="4" x1="1" y1="1" x2="100%" y2="1" fill="red" display="inline"/>
 
 <!-- Activity Rings -->
   
-  <arc id="stepsArcBG"  />
+ <arc id="stepsArcBG"  />
   <arc id="calsArcBG"  />
   <arc id="activeArcBG"  />
   <arc id="stairsArcBG"  />
@@ -28,8 +27,30 @@
   <arc id="calsArc"  />
   <arc id="activeArc"  />
   <arc id="stairsArc"  />
+    </use>
+  
+  <!-- Big Activity Rings -->
+<use href="#cycleview-item" class="cycle-item">
 
-  </svg>
+  <arc id="stepsArcBG2" />
+    <arc id="activeArcBG2" />
+
+  <arc id="calsArcBG2" />
+  <arc id="stairsArcBG2" />
+  <arc id="stepsArc2" />
+  <arc id="calsArc2"  />
+  <arc id="activeArc2" />
+  <arc id="stairsArc2" />
+  <text id="mySteps" />
+  <image id="dataIcon" href="heart.png" />
+  <text id="hrm-data" visibility="visible"/>
+  
+  <!--<line x1="50%" y1="0" x2="50%" y2="100%" fill="white" stroke-width="1" />
+   <line x1="0" y1="50%" x2="100%" y2="50%" fill="white" stroke-width="1" />-->
+
+    </use>
+  </use>
+</svg>
 
 <!-- Colors and Icons Attribution
 Blue: 006DF0
