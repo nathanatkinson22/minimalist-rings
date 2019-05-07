@@ -154,7 +154,6 @@ messaging.peerSocket.close = () => {
   console.log("App Socket Closed");
 }
 
-
 let settings = loadSettings();
 
 let applySettings = function() {
@@ -182,7 +181,6 @@ function setColor(){
   myDateLabel.style.fill = color;
   myClock.style.fill = color;
 }
-
 
 function batteryChange() {
   if (settings.batteryOn == false)
@@ -243,4 +241,3 @@ let onsettingschange = function(data) {
 function saveSettings() {
   settings.noFile = false;
   fs.writeFileSync(SETTINGS_FILE, settings, SETTINGS_TYPE);
-}

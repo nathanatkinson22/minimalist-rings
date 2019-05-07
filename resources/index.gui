@@ -16,6 +16,7 @@
   
 <!-- Battery Status -->
   <line id="batteryLine" stroke-width="4" x1="1" y1="1" x2="100%" y2="1" fill="red" display="inline"/>
+  <line id="batteryLine" stroke-width="4" x1="1" y1="1" x2="100%" y2="1" fill="green"/>
 
 <!-- Activity Rings -->
   
