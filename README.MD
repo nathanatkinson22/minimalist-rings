@@ -13,12 +13,12 @@ This watchface works on both Ionic and Versa watches. It has the following featu
 
 **Ionic:**
 
-![Screenshot on Ionc](https://github.com/smplifenathan/minimal-rings/blob/master/Minimal-Rings-screenshot-ionic-1.png)
-![Larger Rings on Ionic](https://github.com/smplifenathan/minimal-rings/blob/master/Minimal-Rings-screenshot-ionic-2.png)
+![Screenshot on Ionc](https://github.com/smplifenathan/minimalist-rings/blob/master/Minimalist-Rings-screenshot-ionic-1.png)
+![Larger Rings on Ionic](https://github.com/smplifenathan/minimal-rings/blob/master/Minimalist-Rings-screenshot-ionic-2.png)
 
 **Versa:**
 
-![Screenshot on Versa](https://github.com/smplifenathan/minimal-rings/blob/master/Minimal-Rings-screenshot-versa-1.png)
-![Larger Rings on Versa](https://github.com/smplifenathan/minimal-rings/blob/master/Minimal-Rings-screenshot-versa-2.png)
+![Screenshot on Versa](https://github.com/smplifenathan/minimal-rings/blob/master/Minimalist-Rings-screenshot-versa-1.png)
+![Larger Rings on Versa](https://github.com/smplifenathan/minimal-rings/blob/master/Minimalist-Rings-screenshot-versa-2.png)
 
 Let me know if you have any issues. This is my first clock face for a Fitbit watch, so I'm sure the code needs some cleaning up. Some of this code is borrowed from other clock faces, so I don't take credit for most of the code in this clockface. Feel free to borrow, use, reuse, etc. any of the code here. Anything I copied from other clockfaces was released under a GNU or MIT license.
